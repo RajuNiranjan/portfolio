@@ -42,7 +42,7 @@ const ContactMe = () => {
       id="contact"
       className="grid md:grid-cols-2 my-12 md:my-12 py-24 gap-4 relative">
       <div>
-        <h5 className="text-4xl font-bold my-2">let's Connect</h5>
+        <h5 className="text-4xl font-bold my-2">{`let's Connect`}</h5>
         <p className="text-[#777] mb-4 max-w-md">
           I am available for freelance work.
         </p>

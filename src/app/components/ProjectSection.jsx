@@ -13,7 +13,7 @@ const projectsData = [
       "Sleek Next.js portfolio showcasing creativity, powered by Tailwind CSS, ensuring seamless, responsive design excellence.",
     image: "/img/projects/portfolio.png",
     tag: ["All", "Web", "Mobile"],
-    gitUrl: "/",
+    gitUrl: "https://github.com/RajuNiranjan/portfolio",
     previewUrl: "/",
   },
   {

@@ -1,40 +1,33 @@
 "use client";
 
-import React, { useState } from "react";
+import React, { useRef } from "react";
 import GitHubIcon from "@mui/icons-material/GitHub";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import emailjs from "@emailjs/browser";
 import Link from "next/link";
 
 const ContactMe = () => {
-  const [email, setEmail] = useState("");
-  const [name, setName] = useState("");
-  const [message, setMessage] = useState("");
+  const ref = useRef();
 
-  const handelSubmit = (e) => {
+  const sentEmail = (e) => {
     e.preventDefault();
 
-    const serviceId = "service_gokjz7u";
-    const templateId = "template_jfyklra";
-    const publicKey = "KXsuquNg6kdV8SUXe";
-
-    const templatePrams = {
-      from_name: name,
-      from_email: email,
-      to_name: "Niranjan Raju",
-      message: message,
-    };
     emailjs
-      .send(serviceId, templateId, templatePrams, publicKey)
-      .then((response) => {
-        console.log("Email sent successfully!", response);
-        setEmail("");
-        setName("");
-        setMessage("");
-      })
-      .catch((error) => {
-        console.log("Error sending email:", error);
-      });
+      .sendForm(
+        "service_mhx7yjq",
+        "template_zwl94m7",
+        ref.current,
+        "7p9QWbUazD8Zh4Ztb"
+      )
+      .then(
+        (result) => {
+          console.log(result.text);
+        },
+        (error) => {
+          console.log(error.text);
+        }
+      );
+    e.target.reset();
   };
 
   return (
@@ -62,7 +55,30 @@ const ContactMe = () => {
         </div>
       </div>
       <div>
-        <form className="flex flex-col gap-4" onSubmit={handelSubmit}>
+        <form
+          ref={ref}
+          onSubmit={sentEmail}
+          className="flex flex-col gap-4"
+          //  onSubmit={handelSubmit}
+        >
+          <div className="mb-6">
+            <label
+              htmlFor="name"
+              type="name"
+              // value={name}
+              // onChange={(e) => setName(e.target.value)}
+              className="text-white block mb-2 fost-medium">
+              Name
+            </label>
+            <input
+              type="text"
+              id="name"
+              required
+              name="name"
+              placeholder="enter your name"
+              className="bg-[#222] p-2.5 rounded-lg block w-full placeholder-pink-500 text-sm"
+            />
+          </div>
           <div className="mb-6">
             <label
               htmlFor="email"
@@ -71,29 +87,12 @@ const ContactMe = () => {
               Your Email
             </label>
             <input
-              type="email"
+              name="email"
               id="email"
               required
-              value={email}
-              onChange={(e) => setEmail(e.target.value)}
+              // value={email}
+              // onChange={(e) => setEmail(e.target.value)}
               placeholder="example@gmail.com"
-              className="bg-[#222] p-2.5 rounded-lg block w-full placeholder-pink-500 text-sm"
-            />
-          </div>
-          <div className="mb-6">
-            <label
-              htmlFor="name"
-              type="name"
-              value={name}
-              onChange={(e) => setName(e.target.value)}
-              className="text-white block mb-2 fost-medium">
-              Name
-            </label>
-            <input
-              type="text"
-              id="name"
-              required
-              placeholder="Rechi Wilson"
               className="bg-[#222] p-2.5 rounded-lg block w-full placeholder-pink-500 text-sm"
             />
           </div>
@@ -106,8 +105,8 @@ const ContactMe = () => {
             <textarea
               name="message"
               id="message"
-              value={message}
-              onChange={(e) => setMessage(e.target.value)}
+              // value={message}
+              // onChange={(e) => setMessage(e.target.value)}
               placeholder="Let's talk about..."
               className="bg-[#18191E] border border-[#33353F] placeholder-[#9CA2A9] text-stone-100 text-sm rounded-lg block w-full p-2.5"></textarea>
           </div>

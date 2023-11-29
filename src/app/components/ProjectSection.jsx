@@ -14,7 +14,7 @@ const projectsData = [
     image: "/img/projects/portfolio.png",
     tag: ["All", "Web", "Mobile"],
     gitUrl: "https://github.com/RajuNiranjan/portfolio",
-    previewUrl: "/",
+    previewUrl: "https://portfolio-ashy-two-49.vercel.app/#contact",
   },
   {
     id: 1,

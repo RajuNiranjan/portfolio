@@ -61,18 +61,16 @@ const About = () => {
         animate={{ opacity: 1 }}
         transition={{ duration: 0.9 }}>
         <div className="md:grid md:grid-cols-2 gap-8 items-center px-4 xl:gap-16 sm:py-16 xl:px-16">
-          <Image src="/img/lap.jpeg" alt="img" width={500} height={500} />
+          <Image src="/img/lap.jpeg" alt="" width={500} height={500} />
           <div>
             <h2 className="text-4xl font-bold mb-4">About Me</h2>
             <p className="text-base lg:text-lg text-[#fff]">
-              {`
-                Hello! I'm Niranjan Raju, a passionate Front-End developer.From my
-              early age I was so much passionate on web. I develop web
-              applications, I also have experience working with Reactjs and Next
-              js. Able to do any web and programming related task by handling
-              difficulties smoothly in any given time. Have a reasonable skill
-              on Front-End development
-                `}
+              Hello! I&apos;m Niranjan Raju, a passionate Front-End
+              developer.From my early age I was so much passionate on web. I
+              develop web applications, I also have experience working with
+              Reactjs and Next js. Able to do any web and programming related
+              task by handling difficulties smoothly in any given time. Have a
+              reasonable skill on Front-End development
             </p>
             <div className="flex flex-row justify-start mt-8 gap-5">
               <TabButton

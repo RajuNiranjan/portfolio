@@ -42,13 +42,13 @@ const ContactMe = () => {
       id="contact"
       className="grid md:grid-cols-2 my-12 md:my-12 py-24 gap-4 relative">
       <div>
-        <h5 className="text-4xl font-bold my-2">{`let's Connect`}</h5>
+        <h5 className="text-4xl font-bold my-2">let&apos;s Connect</h5>
         <p className="text-[#777] mb-4 max-w-md">
           I am available for freelance work.
         </p>
         <div className="social flex flex-row gap-5">
           <Link
-            className="p-5 border border-white rounded-full hover:bg-blue-800"
+            className="p-5 border border-white rounded-full hover:bg-sky-800"
             href="https://www.linkedin.com/in/raju-niranjan/"
             target="_blank">
             <LinkedInIcon className="text-4xl" />
@@ -109,7 +109,7 @@ const ContactMe = () => {
               value={message}
               onChange={(e) => setMessage(e.target.value)}
               placeholder="Let's talk about..."
-              className="bg-[#18191E] border border-[#33353F] placeholder-[#9CA2A9] text-gray-100 text-sm rounded-lg block w-full p-2.5"></textarea>
+              className="bg-[#18191E] border border-[#33353F] placeholder-[#9CA2A9] text-stone-100 text-sm rounded-lg block w-full p-2.5"></textarea>
           </div>
           <button
             type="submit"

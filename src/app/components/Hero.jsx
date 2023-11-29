@@ -17,7 +17,7 @@ const Hero = () => {
           transition={{ duration: 0.5 }}
           className="col-span-7 place-self-center text-center sm:text-left">
           <h1 className="text-white tex-4xl lg:text-6xl font-extrabold mb-4 sm:text-5xl ">
-            <span>{`Hello, I'm `}</span>
+            <span>Hello, I&apos;m </span>
             <span className="text-transparent bg-clip-text bg-gradient-to-br from-purple-500 via-secondry-400 to-primary-500">
               Niranjan
             </span>{" "}
@@ -49,7 +49,7 @@ const Hero = () => {
               </button>
             </Link>
             <Link
-              className="p-2 border border-white rounded-full hover:bg-blue-800"
+              className="p-2 border border-white rounded-full hover:bg-sky-800"
               href="https://www.linkedin.com/in/raju-niranjan/">
               <LinkedInIcon className="text-4xl" />
             </Link>
@@ -68,7 +68,7 @@ const Hero = () => {
           <div className="rounded-full h-[350px] w-[350px] relative">
             <Image
               src="/img/profile.png"
-              alt="img"
+              alt=""
               width={500}
               height={500}
               className="absolute transform -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"

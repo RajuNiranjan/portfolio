@@ -43,11 +43,12 @@ const Hero = () => {
             creativity and precision.
           </p>
           <div className="flex items-center gap-5 mt-4">
-            <Link href="/img/NiranjanRaju_Resume.pdf" download="downlode">
+            <Link href="/img/resume.pdf" download="download">
               <button className="rounded-full bg-transparent hover:bg-slate-200 text-white hover:text-black border border-white  py-2 px-4 w-full sm:w-fit hover:font-bold">
-                Downlode CV
+                Download CV
               </button>
             </Link>
+
             <Link
               className="p-2 border border-white rounded-full hover:bg-sky-800"
               href="https://www.linkedin.com/in/raju-niranjan/">

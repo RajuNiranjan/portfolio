@@ -7,6 +7,16 @@ import { motion, useInView } from "framer-motion";
 
 const projectsData = [
   {
+    id: 5,
+    title: "BigBag Ecommerce",
+    description:
+      "BigBag, an e-commerce hub using React.js and Tailwind CSS, offers cart and wishlist features. It categorizes items by gender (male, female, kids) and handles payments. it provides location-based services for smoother user interaction.",
+    image: "/img/projects/ecomerce.png",
+    tag: ["All", "Web"],
+    gitUrl: "https://github.com/RajuNiranjan/BigBagEcommerce",
+    previewUrl: "https://big-bag-ecommerce.vercel.app/",
+  },
+  {
     id: 0,
     title: "Personal Portfolio Website",
     description:

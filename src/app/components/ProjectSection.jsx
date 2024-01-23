@@ -7,6 +7,16 @@ import { motion, useInView } from "framer-motion";
 
 const projectsData = [
   {
+    id: 7,
+    title: "myBOMMA",
+    description:
+      "Introducing a cutting-edge movies platform developed with Next.js, Node.js, Express.js, and MongoDB. This responsive application seamlessly performs CRUD operations, allowing users to effortlessly manage and explore their favorite movies. Dive into a user-friendly interface that adapts to all screens, providing a dynamic and engaging movie-watching experience. Discover, create, and interact with your movie collection like never before!",
+    image: "/img/projects/mybomma.png",
+    tag: ["All", "Web", "Mobile"],
+    gitUrl: "https://github.com/RajuNiranjan/mybomma",
+    previewUrl: "https://mybomma.vercel.app/",
+  },
+  {
     id: 5,
     title: "BigBag Ecommerce",
     description:

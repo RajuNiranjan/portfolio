@@ -60,11 +60,11 @@ const projectsData = [
     id: 4,
     title: "Ecommerce Website",
     description:
-      "Dynamic React e-commerce site with CSS finesse, ensuring responsive design for seamless shopping experiences.",
+      "Dynamic React e-commerce site with Tailwind CSS finesse, ensuring responsive design for seamless shopping experiences.",
     image: "/img/projects/ecommerse.png",
     tag: ["All", "Web"],
-    gitUrl: "https://github.com/RajuNiranjan/E-Mart_clone",
-    previewUrl: "https://e-mart-clone.vercel.app/",
+    gitUrl: "https://github.com/Ankit-Mohanta/login-page-thumbstack",
+    previewUrl: "https://login-page-thumbstack.vercel.app/",
   },
 ];
 

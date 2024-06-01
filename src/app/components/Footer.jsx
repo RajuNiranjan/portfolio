@@ -1,6 +1,7 @@
 import React from "react";
 
 const Footer = () => {
+  const year = new Date().getFullYear();
   return (
     <footer className="flex items-center justify-between">
       <video
@@ -13,7 +14,7 @@ const Footer = () => {
         autoPlay="autoplay"
       />
       <h3 className="text-[#777] text-[10px]">
-        Copyright © 2023 Raju.All Rights Reserved.
+        Copyright &copy; {year} lavanya.All Rights Reserved.
       </h3>
     </footer>
   );

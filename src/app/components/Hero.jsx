@@ -6,6 +6,7 @@ import { motion } from "framer-motion";
 import GitHubIcon from "@mui/icons-material/GitHub";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import Link from "next/link";
+// import user from '../../../public/img/projects/'
 
 const Hero = () => {
   return (
@@ -19,7 +20,7 @@ const Hero = () => {
           <h1 className="text-white tex-4xl lg:text-6xl font-extrabold mb-4 sm:text-5xl ">
             <span>Hello, I&apos;m </span>
             <span className="text-transparent bg-clip-text bg-gradient-to-br from-purple-500 via-secondry-400 to-primary-500">
-              Niranjan
+              Lavanya
             </span>{" "}
             <br />
             <TypeAnimation
@@ -51,12 +52,12 @@ const Hero = () => {
 
             <Link
               className="p-2 border border-white rounded-full hover:bg-sky-800"
-              href="https://www.linkedin.com/in/raju-niranjan/">
+              href="https://www.linkedin.com/in/lavanya-lakshmi-20b789257/">
               <LinkedInIcon className="text-4xl" />
             </Link>
             <Link
               className="p-2 border border-white rounded-full hover:text-black hover:bg-white"
-              href="https://github.com/RajuNiranjan?tab=repositories">
+              href="https://github.com/lakshmilavanya02?tab=repositories">
               <GitHubIcon className="text-4xl" />
             </Link>
           </div>
@@ -66,13 +67,13 @@ const Hero = () => {
           animate={{ opacity: 1 }}
           transition={{ duration: 0.5 }}
           className="col-span-5 place-self-center mt-4 lg:mt-0">
-          <div className="rounded-full h-[350px] w-[350px] relative">
+          <div className="rounded-full h-[350px] w-[350px] relative overflow-hidden object-fill">
             <Image
-              src="/img/profile.png"
+              src="/img/user.jpg"
               alt=""
-              width={500}
-              height={500}
-              className="absolute transform -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
+              width={400}
+              height={400}
+              className="absolute transform -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2 overflow-hidden"
             />
           </div>
         </motion.div>

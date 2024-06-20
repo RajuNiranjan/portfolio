@@ -20,7 +20,7 @@ const Hero = () => {
           <h1 className="text-white tex-4xl lg:text-6xl font-extrabold mb-4 sm:text-5xl ">
             <span>Hello, I&apos;m </span>
             <span className="text-transparent bg-clip-text bg-gradient-to-br from-purple-500 via-secondry-400 to-primary-500">
-              Lavanya
+              Niranjan Raju
             </span>{" "}
             <br />
             <TypeAnimation
@@ -52,12 +52,12 @@ const Hero = () => {
 
             <Link
               className="p-2 border border-white rounded-full hover:bg-sky-800"
-              href="https://www.linkedin.com/in/lavanya-lakshmi-20b789257/">
+              href="https://www.linkedin.com/in/raju-niranjan/">
               <LinkedInIcon className="text-4xl" />
             </Link>
             <Link
               className="p-2 border border-white rounded-full hover:text-black hover:bg-white"
-              href="https://github.com/lakshmilavanya02?tab=repositories">
+              href="https://github.com/RajuNiranjan">
               <GitHubIcon className="text-4xl" />
             </Link>
           </div>

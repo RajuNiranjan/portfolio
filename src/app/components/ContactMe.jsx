@@ -42,13 +42,13 @@ const ContactMe = () => {
         <div className="social flex flex-row gap-5">
           <Link
             className="p-5 border border-white rounded-full hover:bg-sky-800"
-            href="https://www.linkedin.com/in/lavanya-lakshmi-20b789257/"
+            href="https://www.linkedin.com/in/raju-niranjan/"
             target="_blank">
             <LinkedInIcon className="text-4xl" />
           </Link>
           <Link
             className="p-5 border border-white rounded-full hover:text-black hover:bg-white"
-            href="https://github.com/lakshmilavanya02?tab=repositories"
+            href="https://github.com/RajuNiranjan"
             target="_blank">
             <GitHubIcon className="text-4xl" />
           </Link>
